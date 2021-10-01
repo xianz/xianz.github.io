@@ -295,7 +295,7 @@ button:active,
 /* 防止页面选项中多余的缩进 */
 
 .ui-paper-wrapper .ui-question .ui-question-options li.ui-correct-answer{
-	background: url('images/icons_right_16x16.png') no-repeat left 18px;
+	background: url('images/icons_right_16x16.png') no-repeat left 12px;
 }
 .ui-paper-wrapper .ui-question .ui-question-hint {
 	background:url('images/btn_answer_ref.png') no-repeat 5px 4px;
