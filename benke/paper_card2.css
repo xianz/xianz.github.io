@@ -177,7 +177,7 @@ button:active,
 	margin:10px;
 }
 .ui-paper-wrapper .ui-question-group{
-	margin: 20px 0;
+	margin: 2px 0;
 }
 .ui-paper-wrapper .ui-question-group  .ui-paper-sub-title{
 	font-weight:bold;
@@ -249,7 +249,7 @@ button:active,
 	margin-bottom: 0;
 	overflow:hidden;
 	background-color: #fff;
-	padding:10px;
+	padding:1px;
 }
 .ui-paper-wrapper .ui-question .ui-question-options li {
 	overflow: hidden;
@@ -295,7 +295,7 @@ button:active,
 /* 防止页面选项中多余的缩进 */
 
 .ui-paper-wrapper .ui-question .ui-question-options li.ui-correct-answer{
-	background: url('images/icons_right_16x16.png') no-repeat left 12px;
+	background: url('images/icons_right_16x16.png') no-repeat 55px 5px;
 }
 .ui-paper-wrapper .ui-question .ui-question-hint {
 	background:url('images/btn_answer_ref.png') no-repeat 5px 4px;
@@ -307,13 +307,14 @@ button:active,
 .ui-paper-wrapper .ui-question .ui-question-hint label {
 	margin: -2px 0 0 30px;
 	display: block;
+	float:left;
 	font-weight: bold;
 }
 .ui-paper-wrapper .ui-question-sub+.ui-question-hint {
 	border: 0;
 	background: none;
 	padding: 0;
-	margin-top: 20px;
+	margin-top: 2px;
 }
 .ui-paper-wrapper .ui-question .ui-question-answer {
 	font-size: 16px;
