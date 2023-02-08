@@ -1,5 +1,6 @@
 html { font-family:'Consolas','Courier New', Courier, monospace;}
 dd{ font-size:.9em;}
 dd span{ color:red;}
+dt span{ color:brown; }
 dt{margin-top:.5em; background:#ccc;}
 dd img{ width: 11cm;}
