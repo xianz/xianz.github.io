@@ -84,8 +84,8 @@
 <dd>D.break和main都是Java语言的关键字</dd>
 
 <dt>14、以下程序代码的输出结果是(      ) <pre>
-int x=5，y=7，u=9，v=6；
-System.out.println(x&gt;y ? x+2：u&gt;v ? u-3：v+2)；</pre></dt>
+    int x=5，y=7，u=9，v=6；
+    System.out.println(x&gt;y ? x+2：u&gt;v ? u-3：v+2)；</pre></dt>
 <dd>A.8</dd>
 <dd>B.6</dd>
 <dd>C.7</dd>
@@ -98,8 +98,8 @@ System.out.println(x&gt;y ? x+2：u&gt;v ? u-3：v+2)；</pre></dt>
 <dd>D.不能被子类的方法覆盖</dd>
 
 <dt>16、以下是关于字符串运算的代码，执行该代码段的输出结果是(      )<pre>
-String  s=″0123456789″，sl，s2；
-sl=s.substring(2)；s2=s.substring(2，5)；System.out.println(s1+s2)；</pre></dt>
+    String  s=″0123456789″，sl，s2；
+    sl=s.substring(2)；s2=s.substring(2，5)；System.out.println(s1+s2)；</pre></dt>
 <dd>A.0122345</dd>
 <dd>B.234567892345</dd>
 <dd>C.012234</dd>
@@ -133,12 +133,12 @@ sl=s.substring(2)；s2=s.substring(2，5)；System.out.println(s1+s2)；</pre></
 <dd>D.****</dd>
 
 <dt>21、设类U声明，及对象u和v的定义如下：<pre>
-class U{
-  int x, int y;
-  U(int a, int b){x= a; y = b;}
-  void copy(U a){ x = a.x; y = a.y;}
-}
-U u = new U(1, 2), v = new U(2, 3);</pre></dt>
+    class U{
+    int x, int y;
+    U(int a, int b){x= a; y = b;}
+    void copy(U a){ x = a.x; y = a.y;}
+    }
+    U u = new U(1, 2), v = new U(2, 3);</pre></dt>
 在以下供选择的代码中，可能引起系统回收内存的是(      )
 <dd>A.u.x=v.y;u.y=v.x</dd>
 <dd>B.u=v</dd>
@@ -274,9 +274,9 @@ public class Test36 extends java.applet.Applet implements Runnable{
     }
     public void run() {
         while(myThread!=null) {
-        try {
-            myThread.sleep(40)；
-        } catch(InterruptedException e){}
+            try {
+                myThread.sleep(40)；
+            } catch(InterruptedException e){}
             seta+=3.0； if(seta&gt;=360)seta=0； repaint()；
         }
     }
@@ -410,8 +410,9 @@ class CurrentThreadDemo {
 (1)程序要求在文本框text中输入的内容是什么?<br>
 (2)辅助文本区showArea组件的作用是什么? <br>
 (3)如何使程序开始下载网络文本文件? <br>
-(4)程序采用什么输入方式下载网络文件? <pre>
-  import java.net.*；    import java.awt.*；
+(4)程序采用什么输入方式下载网络文件? <br>
+<img src="https://public-1251896456.cos.ap-nanjing.myqcloud.com/upic/java1-3-7.png" /><pre>
+import java.net.*；    import java.awt.*；
     import java.awt.event.*；  import,java.io.*；  import javax.swing.*；
     public class Class1{   
         public static void main(String args[]){ 
@@ -482,7 +483,7 @@ public class Class 1 extends Applet implements KeyListener{
     public void keyPressed(KeyEvent e){
         int t=e.getKeyCode()；
         if(t&gt;=KeyEvent.VK_A&& t&lt;=KeyEvent.VK_Z) {
-        text.append(″ ″+(char)t)；
+            text.append(″ ″+(char)t)；
         }
     }
     public void keyTyped(KeyEvent e){}
@@ -536,6 +537,7 @@ class Test22{ //1
 第五大题：编程题
 
 <dt>1、设计实现以下形式布局的Java小应用程序。<br>
+    <img src="https://public-1251896456.cos.ap-nanjing.myqcloud.com/upic/java1-5-1.png" /><br>
 注1：其中空白格是文本框，用于输入对应的内容。<br>
 注2：这里给出的是程序的一部分，你要编写的是方法MyWindow(String s)。<pre>
 import java.applet.*；  import javax.swing.*；  import java.awt.*；
@@ -576,8 +578,8 @@ public static double[][] leftDownConer(double[][]anArray){
 
 <dt>3、请编写方法void strReverse(String str)，该方法的功能是输出一个新字符串，新字符串字符排列顺序与原字符串str的字符排列顺序相反。例如，strReverse(″ABCD″) 所输出的结果是″DCBA″。请使用字符串与字节数组的相互转换方法进行设计。</dt>
 
-<dt>4、请设计实现如下用于输入学号和姓名的对话框界面，其中空白格是文本框，用于输入相应的内容。
-  
+<dt>4、请设计实现如下用于输入学号和姓名的对话框界面，其中空白格是文本框，用于输入相应的内容。<br>
+  <img src="https://public-1251896456.cos.ap-nanjing.myqcloud.com/upic/java1-5-3.png" /><br>
 这里给出的是程序的一部分，你要编写的是类InputNoNameDialog的构造方法InputNoNameDialog(JFrame f，String s，JTextField t)。其中参数f是对话框的依赖窗口，s是对话框标题，t是依赖窗口中显示对话框输入内容的文本框。
 以下是类InputNoNameDialog的程序框架。<pre>
 class InputNoNameDialog extends JDialog implements ActionListener{
