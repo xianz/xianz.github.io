@@ -5,3 +5,9 @@ dt span{ color:brown; }
 dt{margin-top:.5em; background:#ccc;}
 dt img,dd img{ width: 11cm;}
 pre{ background:white; margin:3px;}
+
+/**** 以下是要删的样式 ****/
+/** 软件工程 **/
+.tiankongti span{ color: #ccc;}
+.mingcijieshi dd{ color: white;}
+.jiandati dd{ color:white;}
