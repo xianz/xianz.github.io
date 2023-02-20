@@ -4,11 +4,11 @@ dd pre{font-size: 1.2em;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-dd pre ol{ margin:0;padding:0;line-height: .4em;}
+dd pre ol{ margin:0;padding:0;line-height: 1em;}
 :root{
     --word_color:#eee;
 }
-#toggle_but{ position:fixed; right: 11px; top:11px; line-height: 18pt; }
+#toggle_but{ position:fixed; right: 11px; top:11px; line-height: 18pt; background-color: burlywood; }
 /****/
 .text_red{ color:red;}
 .text_brown{ color: brown !important;}
