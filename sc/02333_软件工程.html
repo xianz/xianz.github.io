@@ -1,9 +1,19 @@
 <!doctype html><html lang="zh"><head><meta charSet="utf-8"/>
     <title>02333软件工程</title>
 	<link href="W080901_20230202.css" rel="stylesheet"/>
+    <script src="../zepto.min.js"></script>
+    <script>
+        function toggle(){
+            $(".xuanzeti dd span").toggleClass('text_green');
+            $(".tiankongti dt span").toggleClass('text_brown');
+            $(".mingcijieshi dd").toggleClass('textarea_color');
+            $(".jiandati dd").toggleClass('textarea_color');
+        }
+    </script>
    </head><body>
-    第一大题：单项选择题
-<dl>
+    第一大题：单项选择题 
+    <button id="toggle_but" onclick="toggle()"> [显示/关闭]答案 </button>
+    <dl class="xuanzeti">
 <dt>1、用结构化语言来描述加工逻辑的外层结构时，以下不属于基本结构的是    【    】</dt>
 <dd>A.顺序结构</dd>
 <dd>B.选择结构</dd>

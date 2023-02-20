@@ -1,13 +1,21 @@
 html { font-family:'Consolas','Courier New', Courier, monospace;}
 dd{ font-size:.9em;}
-dd span{ colord:red;}
-dt span{ colord:brown; }
-dt{margin-top:.5em; background:#ccc;}
+:root{
+    --word_color:#eee;
+}
+#toggle_but{ position:fixed; right: 3px; top:3px; }
+/****/
+.text_red{ color:red;}
+.text_brown{ color: brown !important;}
+.text_green{ color: green !important;}
+.textarea_color{ color:#444 !important; }
+/****/
+dt{margin-top:.5em; background:var(--word_color);}
 dt img,dd img{ width: 11cm;}
 pre{ background:white; margin:3px;}
 
-/**** 以下是要删的样式 ****/
+/**** 以下是要删的样式 **** /
 /** 软件工程 **/
-.tiankongti span{ color: #ccc;}
+.tiankongti span{ color: var(--word_color);}
 .mingcijieshi dd{ color: white;}
 .jiandati dd{ color:white;}

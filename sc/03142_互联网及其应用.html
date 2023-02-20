@@ -1,10 +1,20 @@
 <!doctype html><html lang="zh"><head><meta charSet="utf-8"/>
     <title>03142 互联网及其应用</title>
 	<link href="W080901_20230202.css" rel="stylesheet"/>
+    <script src="../zepto.min.js"></script>
+    <script>
+        function toggle(){
+            $(".xuanzeti dd span").toggleClass('text_green');
+            $(".tiankongti dt span").toggleClass('text_brown');
+            $(".mingcijieshi dd").toggleClass('textarea_color');
+            $(".jiandati dd").toggleClass('textarea_color');
+        }
+    </script>
 </head><body>
-    <dl>《互联网及其应用》(课程代码03142)
+    《互联网及其应用》(课程代码03142)
 第一大题：单项选择题
-
+<button id="toggle_but" onclick="toggle()"> [显示/关闭]答案 </button>
+<dl class="xuanzeti">
 <dt>1、Internet是全球最大的、开放的、由众多网络互连而成的计算机网络，它起源于【    】</dt>
 <dd>A.<span>ARPA网</span></dd>
 <dd>B.SNA网</dd>
@@ -364,8 +374,9 @@
 <dd>B.软件防火墙价格相对便宜，因此个人用户较多使用这类防火墙</dd>
 <dd>C.防火墙可以提高网络的安全性</dd>
 <dd>D. <span>防火墙可以完全确保网络的安全</span></dd>
+</dl>
 第二大题：填空题
-
+<dl class="tiankongti">
 <dt>1、在Unix系统中，如果存在/etc/ftpusers文件，则ftpd会检查用户的登录名，如果该文件中有此用户名，则 （  <span>拒绝该用户访问</span>  ）</dt>
 
 <dt>2、HTML文件可以保存为最简单的TXT文件，因为它使用的编写代码是（  <span>ascii码</span>  ）</dt>
@@ -482,8 +493,9 @@
 <dt>57、网络互联的目的是实现更广泛的（   <span>资源共享</span>   ）。</dt>
 
 <dt>58、IP地址是INTERNET中识别主机的唯一标识。为了便于记忆，在INTERNET中报IP地址分成（   <span>4</span>   ）组，每组8位，组与组之间用.分隔开。</dt>
+</dl>
 第三大题：名词解释题
-
+<dl class="jiandati">
 <dt>1、电子商务</dt>
 <dd>以信息网络技术为手段，以商品交换为中心的商务活动。</dd>
 <dt>2、域名服务</dt>
@@ -513,8 +525,9 @@
 <dt>14、万维网：</dt>
 
 <dt>15、防火墙：</dt>
+</dl>
 第四大题：简答题
-
+<dl class="jiandati">
 <dt>1、简述电子公告版(BBS)的主要功能。</dt>
 
 <dt>2、将一个B类网络划分成子网管理，若借主机地址字段的前4位作为予网地址，予网
@@ -549,8 +562,9 @@
 <dt>14、请说明FTP服务的基本工作原理。</dt>
 
 <dt>15、 Intranet与Internet的联系与区别主要表现在哪些方面？</dt>
+</dl>
 第五大题：综合题
-
+<dl class="jiandati">
 <dt>1、双宿主网关系统逻辑框图如图所示，仔细阅读，然后回答下列问题：</dt>
 <dd>（1）图中标注数字“①”和“②”的部分分别是什么逻辑设备？</dd>
 <dd>（2）如何将这种双宿主网关系系统防为墙改成单一网络过滤系统防火墙？</dd>

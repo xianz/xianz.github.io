@@ -1,10 +1,20 @@
 <!doctype html><html lang="zh"><head><meta charSet="utf-8"/>
     <title>03142 互联网及其应用</title>
 	<link href="W080901_20230202.css" rel="stylesheet"/>
+    <script src="../zepto.min.js"></script>
+    <script>
+        function toggle(){
+            $(".xuanzeti dd span").toggleClass('text_green');
+            $(".tiankongti dt span").toggleClass('text_brown');
+            $(".mingcijieshi dd").toggleClass('textarea_color');
+            $(".jiandati dd").toggleClass('textarea_color');
+        }
+    </script>
 </head><body>
-    <dl>《网页设计与制作》(课程代码00900)
+《网页设计与制作》(课程代码00900)
 第一大题：单项选择题
-
+<button id="toggle_but" onclick="toggle()"> [显示/关闭]答案 </button>
+<dl class="xuanzeti">
 <dt>1、IP协议运行在OSI网络七层模型中的    【  】</dt>
 <dd>A.会话层</dd>
 <dd>B.<span>网络层</span></dd>
@@ -279,8 +289,10 @@
 <dd>B. CSS </dd>
 <dd>C. <span>DOM</span></dd>
 <dd>D. Script(脚本语言)</dd>
+</dl>
 
 第二大题：多项选择题
+<dl class="xuanzeti">
 <dt>1、下列关于IP地址与域名正确的说法是【       】</dt>
 <dd>A.<span>IP地址以数字表示，域名用字符表示</span></dd>
 <dd>B.<span>IP地址是供全球识别的通信地址</span></dd>
@@ -385,8 +397,9 @@
 <dd>C. <span>IP地址与域名是一一对应的</span></dd>
 <dd>D. <span>域名可以多于三个层次</span></dd>
 <dd>E.IP地址与域名都限制在32位内</dd>
+</dl>
 第三大题：名词解释题
-
+<dl class="jiandati">
 <dt>1、DOM</dt>
 
 <dt>2、网站的层次</dt>
@@ -416,8 +429,9 @@
 <dt>14、Web服务器</dt>
 
 <dt>15、嵌入式样式单</dt>
+</dl>
 第四大题：判断改错题
-
+<dl class="jiandati">
 <dt>1、图层是所有图形图像软件必须具备的内容，是我们用来合成和控制元素排列方式的工具。</dt>
 
 <dt>2、TCP／IP是为链接不同的网络而设计的—个协议集，主要由TCP和IP两套协议组成。 (  )</dt>
@@ -447,8 +461,9 @@
 <dt>14、HTML网页中，&lt;a  href=mailto:gcy88@sohu.com&lt;/a&gt;是一个正确的邮件链接写法</dt>
 
 <dt>15、 若某网页背景颜色设置为FFFFF，则背景的颜色为黑色。</dt>
+</dl>
 第五大题：简答题
-
+<dl class="jiandati">
 <dt>1、试比较GIF格式和JPEG格式的原理情形各自适用的范围。</dt>
 
 <dt>2、举出至少6个JavaScript 对角，并简要说明其功能。</dt>
@@ -472,8 +487,9 @@
 <dt>11、什么是“HTML”？HTML“标记”又是什么？</dt>
 
 <dt>12、网站管理和维护的主要工作有哪些？</dt>
+</dl>
 第六大题：编程题
-
+<dl class="jiandati">
 <dt>1、	用HTML。设计下列表格。<br><img src="https://public-1251896456.cos.ap-nanjing.myqcloud.com/upic/webpage-6-1.png" /><br>
 要求：(1)表格的大小和宽度使用默认值，“书目单”是段落文字；<br>
     (2)文字“《网民讲述自己的故事'》”链接到本地的story.htm页面；<br>

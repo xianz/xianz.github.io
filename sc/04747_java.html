@@ -1,10 +1,20 @@
 <!doctype html><html lang="zh"><head><meta charSet="utf-8"/>
     <title>02333软件工程</title>
 	<link href="W080901_20230202.css" rel="stylesheet"/>
+    <script src="../zepto.min.js"></script>
+    <script>
+        function toggle(){
+            $(".xuanzeti dd span").toggleClass('text_green');
+            $(".tiankongti dt span").toggleClass('text_brown');
+            $(".mingcijieshi dd").toggleClass('textarea_color');
+            $(".jiandati dd").toggleClass('textarea_color');
+        }
+    </script>
 </head><body>
-    <dl>《Java语言程序设计(一)》(课程代码04747)
+《Java语言程序设计(一)》(课程代码04747)
 第一大题：单项选择题
-
+<button id="toggle_but" onclick="toggle()"> [显示/关闭]答案 </button>
+<dl class="xuanzeti">
 <dt>1、在以下供选择的方法中，不能用于文件随机访问的方法是(      )</dt>
 <dd>A.readChar()</dd>
 <dd>B.readLong()</dd>
@@ -202,8 +212,9 @@
 <dd>B.init()</dd>
 <dd>C.resume()</dd>
 <dd>D.run()</dd>
+</dl>
 第二大题：填空题
-
+<dl class="tiankongti">
 <dt>1、一个水平滚动条对象的初始值是50，滑块的宽是10个像素，表示的范围是[0，250]。 创建这样的滚动条对象时，提供的5个参数依次是__________。</dt>
 
 <dt>2、要在JComponent 子类的组件中绘图，应重写__________方法。</dt>
@@ -261,8 +272,9 @@
 <dt>28、Java语言提供了两个用于处理字符串的类，它们是__________。</dt>
 
 <dt>29、某程序用代码“JTextField text=new JTextField（）；”创建了一个文本框，并对这个文本框注册了监视器，则在监视器处理方法actionPerformed(ActionEvent e)中，判定是在这个文本框上发生事件的条件表达式是__________。</dt>
+</dl>
 第三大题：程序设计题
-
+<dl class="jiandati">
 <dt>1、阅读下列程序，请写出该程序的功能。<pre>
 import java.applet.*； import java.awt.*；
 public class Test36 extends java.applet.Applet implements Runnable{
@@ -599,8 +611,7 @@ class InputNoNameDialog extends JDialog implements ActionListener{
     }
 }</pre></dt>
 
-<dt>5、
-以下程序的界面有一个按钮button、一个文本区textA和一个文本框textF。程序运行时，在文本区中输入数字序列，单击按钮，则在文本框中显示数字序列的和。以下是要求你编写的actionPerformed(ActionEvent e)方法的部分代码。
+<dt>5、以下程序的界面有一个按钮button、一个文本区textA和一个文本框textF。程序运行时，在文本区中输入数字序列，单击按钮，则在文本框中显示数字序列的和。以下是要求你编写的actionPerformed(ActionEvent e)方法的部分代码。
 <pre>
 public void actionPerformed(ActionEvent e) {
     if (e.getSource() == button) {
