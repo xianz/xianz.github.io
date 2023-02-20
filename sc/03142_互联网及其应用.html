@@ -3,17 +3,21 @@
 	<link href="W080901_20230202.css" rel="stylesheet"/>
     <script src="../zepto.min.js"></script>
     <script>
-        function toggle(){
-            $(".xuanzeti dd span").toggleClass('text_green');
-            $(".tiankongti dt span").toggleClass('text_brown');
-            $(".mingcijieshi dd").toggleClass('textarea_color');
-            $(".jiandati dd").toggleClass('textarea_color');
-        }
+        $(function(){
+            let toggle = function(){
+                $(".xuanzeti dd span").toggleClass('text_green');
+                $(".tiankongti dt span").toggleClass('text_brown');
+                $(".mingcijieshi dd").toggleClass('textarea_color');
+                $(".jiandati dd").toggleClass('textarea_color');
+            }
+            $('#toggle_but').click(toggle);
+            toggle();
+        });
     </script>
 </head><body>
     《互联网及其应用》(课程代码03142)
 第一大题：单项选择题
-<button id="toggle_but" onclick="toggle()"> [显示/关闭]答案 </button>
+<button id="toggle_but"> [显示/关闭]答案 </button>
 <dl class="xuanzeti">
 <dt>1、Internet是全球最大的、开放的、由众多网络互连而成的计算机网络，它起源于【    】</dt>
 <dd>A.<span>ARPA网</span></dd>

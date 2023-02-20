@@ -3,17 +3,21 @@
 	<link href="W080901_20230202.css" rel="stylesheet"/>
     <script src="../zepto.min.js"></script>
     <script>
-        function toggle(){
-            $(".xuanzeti dd span").toggleClass('text_green');
-            $(".tiankongti dt span").toggleClass('text_brown');
-            $(".mingcijieshi dd").toggleClass('textarea_color');
-            $(".jiandati dd").toggleClass('textarea_color');
-        }
+        $(function(){
+            let toggle = function(){
+                $(".xuanzeti dd span").toggleClass('text_green');
+                $(".tiankongti dt span").toggleClass('text_brown');
+                $(".mingcijieshi dd").toggleClass('textarea_color');
+                $(".jiandati dd").toggleClass('textarea_color');
+            }
+            $('#toggle_but').click(toggle);
+            toggle();
+        });
     </script>
 </head><body>
     《中国近现代史纲要(试题已更新)》(课程代码03708)
 第一大题：单项选择题 
-<button id="toggle_but" onclick="toggle()"> [显示/关闭]答案 </button>
+<button id="toggle_but"> [显示/关闭]答案 </button>
 <dl class="xuanzeti">
 <dt>1、1930年1月，毛泽东提出以乡村为中心思想的重要著作是【 】</dt>
 <dd>A.《井冈山的斗争》</dd>

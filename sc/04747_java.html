@@ -3,17 +3,21 @@
 	<link href="W080901_20230202.css" rel="stylesheet"/>
     <script src="../zepto.min.js"></script>
     <script>
-        function toggle(){
-            $(".xuanzeti dd span").toggleClass('text_green');
-            $(".tiankongti dt span").toggleClass('text_brown');
-            $(".mingcijieshi dd").toggleClass('textarea_color');
-            $(".jiandati dd").toggleClass('textarea_color');
-        }
+        $(function(){
+            let toggle = function(){
+                $(".xuanzeti dd span").toggleClass('text_green');
+                $(".tiankongti dt span").toggleClass('text_brown');
+                $(".mingcijieshi dd").toggleClass('textarea_color');
+                $(".jiandati dd").toggleClass('textarea_color');
+            }
+            $('#toggle_but').click(toggle);
+            toggle();
+        });
     </script>
 </head><body>
 《Java语言程序设计(一)》(课程代码04747)
 第一大题：单项选择题
-<button id="toggle_but" onclick="toggle()"> [显示/关闭]答案 </button>
+<button id="toggle_but"> [显示/关闭]答案 </button>
 <dl class="xuanzeti">
 <dt>1、在以下供选择的方法中，不能用于文件随机访问的方法是(      )</dt>
 <dd>A.readChar()</dd>
