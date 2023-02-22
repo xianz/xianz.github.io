@@ -8,7 +8,7 @@ dd pre ol{ margin:0;padding:0;line-height: 1em;}
 :root{
     --word_color:#ccc;
 }
-#toggle_but{ position:fixed; right: 11px; bottom:33px; line-height: 33pt; background-color:yellow; }
+#toggle_but{ position:fixed; right: 11px; bottom:10%; line-height: 33pt; background-color:yellow; }
 /****/
 .text_red{ color:red;}
 .text_brown{ color: brown !important;}
