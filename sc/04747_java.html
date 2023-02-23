@@ -2,18 +2,7 @@
     <title>04747 Java</title>
 	<link href="W080901_20230202.css" rel="stylesheet"/>
     <script src="../zepto.min.js"></script>
-    <script>
-        $(function(){
-            let toggle = function(){
-                $(".xuanzeti dd span").toggleClass('text_green');
-                $(".tiankongti dt span").toggleClass('text_brown');
-                $(".mingcijieshi dd").toggleClass('textarea_color');
-                $(".jiandati dd").toggleClass('textarea_color');
-            }
-            $('#toggle_but').click(toggle);
-            toggle();
-        });
-    </script>
+    <script src="../app.js"></script>
 </head><body>
 《Java语言程序设计(一)》(课程代码04747)
 第一大题：单项选择题
@@ -22,42 +11,42 @@
 <dt>1、在以下供选择的方法中，不能用于文件随机访问的方法是(      )</dt>
 <dd>A.readChar()</dd>
 <dd>B.readLong()</dd>
-<dd>C.readInteger()</dd>
+<dd>C.<span>readInteger()</dd>
 <dd>D.writeChars()</dd>
 
 <dt>2、某程序利用网址参数创建URL对象url，接着希望利用对象url获得URLConnection对象，则这个url对象要调用的方法是(      )</dt>
 <dd>A.connection()</dd>
 <dd>B.URLConnection()</dd>
 <dd>C.getConnection()</dd>
-<dd>D.openConnection()</dd>
+<dd>D.<span>openConnection()</dd>
 
 <dt>3、在下述字符串中，不属于Java语言关键字的是 (   )</dt>
 <dd>A.float</dd>
 <dd>B.new</dd>
-<dd>C.java</dd>
+<dd>C.<span>java</dd>
 <dd>D.return</dd>
 
 <dt>4、Java语言中数值数据的类型能自动转换，按照从左到右的转换次序为 (   )</dt>
 <dd>A.byte→int→short→long→float→double</dd>
-<dd>B.byte→short→int→long→float→double</dd>
+<dd>B.<span>byte→short→int→long→float→double</dd>
 <dd>C.byte→short→int→float→long→double</dd>
 <dd>D.short→byte→int→long→float→double</dd>
 
 <dt>5、在以下供选择的概念中，不属于面向对象语言概念的是 (   )</dt>
 <dd>A.消息</dd>
-<dd>B.模块</dd>
+<dd>B.<span>模块</dd>
 <dd>C.继承</dd>
 <dd>D.多态性</dd>
 
 <dt>6、在下述Java语言语句中,错误的创建数组的方法是 (   )</dt>
 <dd>A.int intArray [ ]； intArray=new int[5]；</dd>
 <dd>B.int intArray [ ]=new int[5]；</dd>
-<dd>C.int [ ] intArray ={1，2，3，4，5}；</dd>
-<dd>D.int intArray [5]={1，2，3，4．5};</dd>
+<dd>C.int[ ] intArray ={1，2，3，4，5}；</dd>
+<dd>D.<span>int intArray [5]={1，2，3，4．5};</dd>
 
 <dt>7、在Swing中，它的子类能用来创建框架窗口的类是 (   )</dt>
 <dd>A.JWindow</dd>
-<dd>B.JFrame</dd>
+<dd>B.<span>JFrame</dd>
 <dd>C.JDialog</dd>
 <dd>D.JApplet</dd>
 
@@ -65,10 +54,10 @@
 <dd>A.按下鼠标左键</dd>
 <dd>B.点击鼠标右键</dd>
 <dd>C.鼠标进入</dd>
-<dd>D.鼠标移动</dd>
+<dd>D.<span>鼠标移动</dd>
 
 <dt>9、以下不属于文字字型要素的是 (   )</dt>
-<dd>A.颜色</dd>
+<dd>A.<span>颜色</dd>
 <dd>B.字体</dd>
 <dd>C.风格</dd>
 <dd>D.字号</dd>
@@ -76,17 +65,17 @@
 <dt>10、在以下四个供选的整数中，能作为线程最高优先级的整数是 (   )</dt>
 <dd>A.0</dd>
 <dd>B.1</dd>
-<dd>C.10</dd>
+<dd>C.<span>10</dd>
 <dd>D.11</dd>
 
 <dt>11、Java语言可以用javax.swing包中的类JFileChooser来实现打开和保存文件对话框。用户通过文件对话框不可能获得的信息是 (   )</dt>
 <dd>A.文件名称</dd>
 <dd>B.文件路径</dd>
-<dd>C.文件内容</dd>
+<dd>C.<span>文件内容</dd>
 <dd>D.文件对象</dd>
 
 <dt>12、在编写访问数据库的Java程序时，Connection对象的作用是 (   )</dt>
-<dd>A.用来表示与数据库的连接</dd>
+<dd>A.<span>用来表示与数据库的连接</dd>
 <dd>B.存储查询结果</dd>
 <dd>C.在指定的连接中处理SQL语句</dd>
 <dd>D.建立新数据库连接</dd>
@@ -94,19 +83,19 @@
 <dt>13、以下是关于Java语言关键字的叙述，其中正确的是(      )</dt>
 <dd>A.关键字可以用来描述类的成员类型，但是不能描述普通变量</dd>
 <dd>B.关键字由字母(包括英文字母、下划线字符、美元字符、文字字符)和数字组成</dd>
-<dd>C.关键字不可以用作变量、方法、类或标号的标识符</dd>
+<dd>C.<span>关键字不可以用作变量、方法、类或标号的标识符</dd>
 <dd>D.break和main都是Java语言的关键字</dd>
 
 <dt>14、以下程序代码的输出结果是(      ) <pre>
     int x=5，y=7，u=9，v=6；
     System.out.println(x&gt;y ? x+2：u&gt;v ? u-3：v+2)；</pre></dt>
 <dd>A.8</dd>
-<dd>B.6</dd>
+<dd>B.<span>6</dd>
 <dd>C.7</dd>
 <dd>D.true</dd>
 
 <dt>15、Java语言中，在类定义时用final关键字修饰，是指这个类(      )</dt>
-<dd>A.不能被继承</dd>
+<dd>A.<span>不能被继承</dd>
 <dd>B.在子类的方法中不能被调用</dd>
 <dd>C.能被别的程序自由调用</dd>
 <dd>D.不能被子类的方法覆盖</dd>
@@ -117,22 +106,22 @@
 <dd>A.0122345</dd>
 <dd>B.234567892345</dd>
 <dd>C.012234</dd>
-<dd>D.23456789234</dd>
+<dd>D.<span>23456789234</dd>
 
 <dt>17、以下是关于FlowLayout布局组件排列顺序的叙述，正确的是(      )</dt>
 <dd>A.从上到下排列</dd>
-<dd>B.从左到右排列</dd>
+<dd>B.<span>从左到右排列</dd>
 <dd>C.从下到上排列</dd>
 <dd>D.从右到左排列</dd>
 
 <dt>18、程序执行方法showOpenDialog()，能打开“打开文件对话框”，如果该方法的返回值是JFileChooser.APPROVE_OPTION，则用户执行的动作是(      )</dt>
 <dd>A.对话框非正常关闭</dd>
-<dd>B.按下“打开／保存”按钮</dd>
+<dd>B.<span>按下“打开／保存”按钮</dd>
 <dd>C.按下“撤销”按钮</dd>
 <dd>D.重新输入了一个文件名</dd>
 
 <dt>19、下列字符组合不能作为Java整型常量的是(      )</dt>
-<dd>A.078</dd>
+<dd>A.<span>078</dd>
 <dd>B.0x3ACB</dd>
 <dd>C.5000</dd>
 <dd>D.0x3ABC</dd>
@@ -142,7 +131,7 @@
      while (x &gt; 7)
       {  System.out.print("*"); x--；}</pre></dt>
 <dd>A.**</dd>
-<dd>B.***</dd>
+<dd>B.<span>***</dd>
 <dd>C.*</dd>
 <dd>D.****</dd>
 
@@ -155,7 +144,7 @@
     U u = new U(1, 2), v = new U(2, 3);</pre></dt>
 在以下供选择的代码中，可能引起系统回收内存的是(      )
 <dd>A.u.x=v.y;u.y=v.x</dd>
-<dd>B.u=v</dd>
+<dd>B.<span>u=v</dd>
 <dd>C.u.copy</dd>
 <dd>D.v.copy(u)</dd>
 
@@ -166,11 +155,11 @@
 则表达式s1==s2和s1==s3的值分别是(      )
 <dd>A.true，true</dd>
 <dd>B.false，false</dd>
-<dd>C.true，false</dd>
+<dd>C.<span>true，false</dd>
 <dd>D.false，true</dd>
 
 <dt>23、以下关于AWT与Swing之间关系的叙述，正确的是(      )</dt>
-<dd>A.Swing是AWT的提高和扩展</dd>
+<dd>A.<span>Swing是AWT的提高和扩展</dd>
 <dd>B.在写GUI程序时，AWT和Swing不能同时使用</dd>
 <dd>C.AWT和Swing在不同的平台上都有相同的表示</dd>
 <dd>D.AWT中的类是从Swing继承的</dd>
@@ -179,11 +168,11 @@
 <dd>A.JScrollBar对象</dd>
 <dd>B.JMenuBar对象</dd>
 <dd>C.JComboBox对象</dd>
-<dd>D.JDialog对象</dd>
+<dd>D.<span>JDialog对象</dd>
 
 <dt>25、一般的绘图程序要定义一个JPanel子类。在JPanel子类中还要重定义一个方法，在这个方法中调用绘图方法，绘制各种图形。要重定义的方法是(      )</dt>
 <dd>A.paint()</dd>
-<dd>B.paintComponent()</dd>
+<dd>B.<span>paintComponent()</dd>
 <dd>C.repaint()</dd>
 <dd>D.update()</dd>
 
@@ -191,10 +180,10 @@
 <dd>A.声明实现Runnable接口的类，在类内实现run()方法，让线程调用start()方法。</dd>
 <dd>B.声明实现Runnable接口的类，在类内实现run()方法，在类内声明线程对象，在init()方法中创建新线程，启动新线程。</dd>
 <dd>C.声明实现Runnable接口的类，在类内实现run()方法，在类内声明线程对象，在Init()方法或start()方法中创建新线程，在start()方法中启动新线程。</dd>
-<dd>D.声明实现Runnable接口的类，在类内实现run()方法，在init()方法中创建新线程，在start()方法中启动新线程</dd>
+<dd>D.<span>声明实现Runnable接口的类，在类内实现run()方法，在init()方法中创建新线程，在start()方法中启动新线程</dd>
 
 <dt>27、程序如果要按行输入输出文件的字符流，最合理的方法是采用(      )</dt>
-<dd>A.BufferedReader类和BufferedWriter类</dd>
+<dd>A.<span>BufferedReader类和BufferedWriter类</dd>
 <dd>B.InputStream类和OutputStream类</dd>
 <dd>C.FileReader类和FileWriter类</dd>
 <dd>D.File_Reader类和File_Writer类</dd>
@@ -203,10 +192,10 @@
 <dd>A.建立新数据库连接</dd>
 <dd>B.用来表示与数据库的连接</dd>
 <dd>C.在指定的连接中处理SQL语句</dd>
-<dd>D.存储查询结果</dd>
+<dd>D.<span>存储查询结果</dd>
 
 <dt>29、设已经有Graphics2D对象g2d，Rectangle2D对象r，绘制对象r的代码是(      )</dt>
-<dd>A.g2d.draw(r)</dd>
+<dd>A.<span>g2d.draw(r)</dd>
 <dd>B.g2d.drawRect(r)</dd>
 <dd>C.r.draw()</dd>
 <dd>D.r.drawRect()</dd>
@@ -214,68 +203,68 @@
 <dt>30、在以下供选择的方法中，能让线程从阻塞状态恢复到就绪状态的方法是(      )</dt>
 <dd>A.start()</dd>
 <dd>B.init()</dd>
-<dd>C.resume()</dd>
+<dd>C.<span>resume()</dd>
 <dd>D.run()</dd>
 </dl>
 第二大题：填空题
 <dl class="tiankongti">
-<dt>1、一个水平滚动条对象的初始值是50，滑块的宽是10个像素，表示的范围是[0，250]。 创建这样的滚动条对象时，提供的5个参数依次是__________。</dt>
+<dt>1、一个水平滚动条对象的初始值是50，滑块的宽是10个像素，表示的范围是[0，250]。 创建这样的滚动条对象时，提供的5个参数依次是_<span>JScrollBar.HORIZONTAL,50,10,0,250</span>_。</dt>
 
-<dt>2、要在JComponent 子类的组件中绘图，应重写__________方法。</dt>
+<dt>2、要在JComponent 子类的组件中绘图，应重写_<span>paintComponent</span>_方法。</dt>
 
-<dt>3、当线程使用完临界段后，为了使等待的线程恢复工作，需要调用的方法是__________。</dt>
+<dt>3、当线程使用完临界段后，为了使等待的线程恢复工作，需要调用的方法是__<span>notify()/notifyAll()</span>_。</dt>
 
-<dt>4、某程序想为一个long型整数文件构造随机读写对象，支持这个要求的类是__________。</dt>
+<dt>4、某程序想为一个long型整数文件构造随机读写对象，支持这个要求的类是__<span>RandomAccessFile</span>_。</dt>
 
-<dt>5、设已知服务器的IP地址和端口号，要创建一个套接字对象，支持这个要求的类是__________。</dt>
+<dt>5、设已知服务器的IP地址和端口号，要创建一个套接字对象，支持这个要求的类是__<span>Socket</span>__。</dt>
 
-<dt>6、在类声明之前用_________修饰，声明类是不能被再继承的类，即它不能再有子类。</dt>
+<dt>6、在类声明之前用___<span>Final</span>__修饰，声明类是不能被再继承的类，即它不能再有子类。</dt>
 
-<dt>7、Java语言采用多种机制来保证可移植性，其中最主要的是______。</dt>
+<dt>7、Java语言采用多种机制来保证可移植性，其中最主要的是__<span>java虚拟机</span>__。</dt>
 
-<dt>8、构造一个Java表达式：y／x&gt;5，并且x!=0。这个表达式是_________。</dt>
+<dt>8、构造一个Java表达式：y／x&gt;5，并且x!=0。这个表达式是___<span>x!=0 && y/x>5</span>___。</dt>
 
-<dt>9、使用默认字节字符对应表，将字符串转化为字节数组的方法是______。</dt>
+<dt>9、使用默认字节字符对应表，将字符串转化为字节数组的方法是__<span>getBytes()</span>__。</dt>
 
-<dt>10、在实现接口ActionListener的方法actionPerformed()中，常用的有两个获得事件源的方法，它们是getActionCommand()和_________。</dt>
+<dt>10、在实现接口ActionListener的方法actionPerformed()中，常用的有两个获得事件源的方法，它们是getActionCommand()和__<span>getSource()</span>__。</dt>
 
-<dt>11、使用单选按钮的方法是将一些单选按钮用_________对象分组，使同一组内的单选按钮只允许一个被选中。</dt>
+<dt>11、使用单选按钮的方法是将一些单选按钮用___<span>ButtonGroup</span>___对象分组，使同一组内的单选按钮只允许一个被选中。</dt>
 
-<dt>12、在Java语言中，用类Font对象设置字型。如果要设置的字型是：细明体、正常风格(Font.PLAIN)，12磅字号，构造这样要求的Font对象fnA的代码是_________。</dt>
+<dt>12、在Java语言中，用类Font对象设置字型。如果要设置的字型是：细明体、正常风格(Font.PLAIN)，12磅字号，构造这样要求的Font对象fnA的代码是__<span>Font fnA = new Font("细明体", FONT.PLAIN, 12)</span>__。</dt>
 
-<dt>13、线程从阻塞状态恢复到就绪状态，有三种途径：自动恢复、用resume()方法恢复和用_________方法恢复。</dt>
+<dt>13、线程从阻塞状态恢复到就绪状态，有三种途径：自动恢复、用resume()方法恢复和用___<span>notify</span>___方法恢复。</dt>
 
-<dt>14、为普通的8位字节流文件读和写操作提供支持的类是_________。</dt>
+<dt>14、为普通的8位字节流文件读和写操作提供支持的类是__<span>FileInputStream和FileOutputStream</span>__。</dt>
 
-<dt>15、Connection类是java.sql包中用于处理与数据库连接的类。Connection对象是用来表示_________的对象，Java程序对数据库的操作都在这种对象上进行。</dt>
+<dt>15、Connection类是java.sql包中用于处理与数据库连接的类。Connection对象是用来表示__<span>数据库连接</span>__的对象，Java程序对数据库的操作都在这种对象上进行。</dt>
 
-<dt>16、一个应用程序必须在某个类中定义的方法是______。</dt>
+<dt>16、一个应用程序必须在某个类中定义的方法是__main()__。</dt>
 
-<dt>17、在面向对象语言中，对象之间的交互通过______实现。</dt>
+<dt>17、在面向对象语言中，对象之间的交互通过__<span>相互发送消息</span>__实现。</dt>
 
-<dt>18、设有两个字符串对象str1和str2，则表达式“strl==str2”的意义是判别字符串strl和str2______。</dt>
+<dt>18、设有两个字符串对象str1和str2，则表达式“strl==str2”的意义是判别字符串strl和str2__<span>是否引用同一个对象</span>__。</dt>
 
-<dt>19、一个基于Swing的应用程序可能在任何平台上都会有相同的______。</dt>
+<dt>19、一个基于Swing的应用程序可能在任何平台上都会有相同的__<span>外观与风格</span>__。</dt>
 
-<dt>20、处理键盘事件的Java程序，要实现的接口是______。</dt>
+<dt>20、处理键盘事件的Java程序，要实现的接口是__<span>KeyListener</span>__。</dt>
 
-<dt>21、Java语言约定，坐标原点位于绘图区域的______。</dt>
+<dt>21、Java语言约定，坐标原点位于绘图区域的___<span>左上角</span>___。</dt>
 
-<dt>22、Java程序中，在临界段中使用______方法，使执行该方法的线程等待。</dt>
+<dt>22、Java程序中，在临界段中使用__<span>wait()</span>__方法，使执行该方法的线程等待。</dt>
 
-<dt>23、BufferedWriter类对象能按行输入文件的内容，按行输入的方法是______。</dt>
+<dt>23、BufferedWriter类对象能按行输入文件的内容，按行输入的方法是__<span>readLine()</span>__。</dt>
 
-<dt>24、在java.net包中有InetAddress类的定义，Java程序中的InetAddress类对象存储的内容是______。</dt>
+<dt>24、在java.net包中有InetAddress类的定义，Java程序中的InetAddress类对象存储的内容是__<span>IP地址和域名</span>__。</dt>
 
-<dt>25、Java的编译程序先将Java源程序翻译成与机器无关的__________。</dt>
+<dt>25、Java的编译程序先将Java源程序翻译成与机器无关的__<span>字节码</span>___。</dt>
 
-<dt>26、表达式¨23 & 18’’的值是__________。</dt>
+<dt>26、表达式¨23 & 18’’的值是___<span>18</span>___。</dt>
 
-<dt>27、如果类A某个成员变量的类型是类B，则类A和类B之间是__________关系。</dt>
+<dt>27、如果类A某个成员变量的类型是类B，则类A和类B之间是___<span>has-a</span>___关系。</dt>
 
-<dt>28、Java语言提供了两个用于处理字符串的类，它们是__________。</dt>
+<dt>28、Java语言提供了两个用于处理字符串的类，它们是___<span>String 和 StringBuffer</span>___。</dt>
 
-<dt>29、某程序用代码“JTextField text=new JTextField（）；”创建了一个文本框，并对这个文本框注册了监视器，则在监视器处理方法actionPerformed(ActionEvent e)中，判定是在这个文本框上发生事件的条件表达式是__________。</dt>
+<dt>29、某程序用代码“JTextField text=new JTextField（）；”创建了一个文本框，并对这个文本框注册了监视器，则在监视器处理方法actionPerformed(ActionEvent e)中，判定是在这个文本框上发生事件的条件表达式是___<span>e.getSource()==text</span>___。</dt>
 </dl>
 第三大题：程序设计题
 <dl class="jiandati">
@@ -303,6 +292,7 @@ public class Test36 extends java.applet.Applet implements Runnable{
         g.setColor(Color.red)； g.drawOval(x0，y0，10，10)；
     }
 }</pre></dt>
+<dd>答：红色、顺时针画圆</dd>
 
 <dt>2、阅读下列程序，请写出调用pascal(4)的输出结果。<pre>
 static void pascal(int n) {
@@ -320,10 +310,15 @@ static void pascal(int n) {
         System.out.println();
     }
 }</pre></dt>
+<dd><pre>1
+1  1
+1  2  1
+1  3  3  1</pre></dd>
 
  <dt>3、阅读下列程序，请写出该程序的输出结果。<pre>
 class Tree {
-    private String name;public boolean flower;
+    private String name;
+    public boolean flower;
     public int birthYear;
     Tree(String n, boolean f, int y){ name = n; flower = f; birthYear = y; }
     public void setName(String n){name = n;}
@@ -338,7 +333,7 @@ class PineTree extends Tree {
     public boolean coniferous = true;
     PineTree(String n, boolean f, int y, boolean c){super(n, f, y);coniferous = c; }
     public void printTree(String str){
-        super, printTree(str);
+        super.printTree(str);
         System.out.println("Coniferous:" + coniferous);
     }
 }
@@ -346,15 +341,25 @@ class Test32 {
     public static void main(String []args){
         Tree fOb = new Tree("May Flower", true, 1980);
         PineTree sOb = new PineTree("Pine", false, 2000, true);
-        fOb.printTree(" fOb:"); sOb.printTree("sOb:");
+        fOb.printTree(" fOb:");
+        sOb.printTree("sOb:");
     }
 }</pre></dt>
+<dd><pre>fOb:
+Name:May Flower
+Birth Year:1980
+Flower:true
+sOb:
+Name:Pine
+Birth Year:2000
+Flower:false
+Coniferous:true</pre></dd>
 
 <dt>4、阅读下列程序，请写出该程序的功能。<pre>
 import java.applet.*; import javax.swing.*;
 import java.awt.*;  import java.awt.event.*;
 public class Test34 extends Applet implements ActionListener {
-    JTextField text;int r; JPanel panel;
+    JTextField text; int r; JPanel panel;
     public void paint(Graphics g){
         Graphics gc = panel.getGraphics();
         gc.clearRect(0,0, panel.getWidth(), panel.getHeight());
@@ -372,12 +377,13 @@ public class Test34 extends Applet implements ActionListener {
         }
     }
 }</pre></dt>
+<dd>当在text文本框上回车时，以文本框中的值为直径，在点（10，10）为左上角绘制红色的圆</dd>
 
 <dt>5、阅读下列程序，请回答以下问题：<br>
-(1)该程序的菜单条中共有几个菜单项?<br>
-(2)单击哪个菜单项，可以打开一个对话框?<br>
-(3)该对话框是强制型还是非强制型?<br>
-(4)该对话框中显示的是什么内容?<pre>
+(1)该程序的菜单条中共有几个菜单项? <span>3个</span><br>
+(2)单击哪个菜单项，可以打开一个对话框? <span>show菜单</span><br>
+(3)该对话框是强制型还是非强制型? <span>非强制型</span><br>
+(4)该对话框中显示的是什么内容? <span>当前系统时间</span><pre>
 Import javax.swing.*;import java.awt.*;
 import java.awt.event.*; import java.util.*;
 class MyDialog extends JDialog {
@@ -421,12 +427,18 @@ class CurrentThreadDemo {
         }
     }
 }</pre></dt>
+<dd><pre>Current thread
+After name change
+3
+2
+1
+</pre></dd>
 
 <dt>7、阅读下列程序，请回答以下问题：<pre>
-(1)程序要求在文本框text中输入的内容是什么?
-(2)辅助文本区showArea组件的作用是什么? 
-(3)如何使程序开始下载网络文本文件? 
-(4)程序采用什么输入方式下载网络文件? 
+(1)程序要求在文本框text中输入的内容是什么? <span>需要读取文件的URL地址</span>
+(2)辅助文本区showArea组件的作用是什么? <span>显示读取的文件内容</span>
+(3)如何使程序开始下载网络文本文件? <span>点击下载按钮</span>
+(4)程序采用什么输入方式下载网络文件?  <span>使用字节流方式下载</span>
 <img src="https://public-1251896456.cos.ap-nanjing.myqcloud.com/upic/java1-3-7.png" />
 import java.net.*；    import java.awt.*；
     import java.awt.event.*；  import,java.io.*；  import javax.swing.*；
@@ -471,6 +483,8 @@ class Child extends Parent {
     public void method l (){ System.out.println(″Child′s method 1 ()″)；}
     public static void main(String args[]){ Parent p = new Child()；p.method2()；}
 }</pre></dt>
+<dd><pre>Parent′s method 2()
+Parent′s method 1()</pre></dd>
 
 <dt>9、阅读下列程序，请写出该程序的功能。<pre>
 import java.util.*；import javax.swing.*；
@@ -487,6 +501,7 @@ public class Test33{
         }
     }
 )</pre></dt>
+<dd>在对话框中输入文字，并以 逗号 分割出单词个数 及各个单词</dd>
 
 <dt>10、阅读下列程序，请写出该程序的功能。<pre>
 import java.applet.*：import java.awt.event.*；import javax.swing.*
@@ -505,15 +520,27 @@ public class Class 1 extends Applet implements KeyListener{
     public void keyTyped(KeyEvent e){}
     public void keyReleased(KeyEvent e){}
 }</pre></dt>
+<dd><pre>监听从A-Z的输入字符，并追加到文本框里</pre></dd>
+
 第四大题：简答题
 
 <dt>1、请写出表示year年是闰年的Java表达式。闰年的条件是：每4年一个闰年，但每100年少一个闰年，每400年又增加一个闰年。</dt>
+<dd>(year%4==0 && year%100!=0) || year%400==0</dd>
 
 <dt>2、请写出在类的方法的定义之前，加上修饰字public、private的区别。</dt>
+<dd>public修饰的方法 为公用方法，任何类都可以访问； private修饰的方法为私有方法，只有当前类自身可以访问</dd>
 
 <dt>3、请写出将文本区text放置于滚动面板jsp，并将滚动面板jsp添加到JFrame窗口myFrame的Java语句</dt>
+<dd><pre>TextArea test = new TextArea();
+JScrollPane jsp = new JScrollPane( text );
+myFrame.getContentPane().add( jsp );
+</pre></dd>
 
 <dt>4、要用Graphics2D类的方法画一个图形，首先要把参数对象g强制转换成Graphics2D对象；然后，用图形类提供的静态方法Double()创建一个图形对象；最后，以图形对象为参数调用Graphics2D对象的draw()方法绘制这个图形。请写出用这样的方法绘制一条线段的程序段，线段的两个端点分别是(10.0，10.0)和(30.0，30.0)。</dt>
+<dd><pre>Graphics2D g2d = (Graphics2D)g;
+Line2D line = new Line2D.Double(10.0, 10.0,  30.0, 30.0);
+g2d.draw(line);
+</pre></dd>
 
 <dt>5、以下代码定义了一个类，请指出其中三条不合法的代码行(行号参见注释)。<pre>
 class Test22{ //1
@@ -524,32 +551,57 @@ class Test22{ //1
     static float facl(boolean f){return f?u:v;}          //6
     float fac2(boolean f){return f?v:u;}                 //7
 }         //8</pre></dt>
+<dd>4,5,6 错误</dd>
 
 <dt>6、在java.awt.event中，用来检测并对事件做出反应的模型涉及三种对象。请写出这三种对象。</dt>
+<dd>源对象、监视器对象、事件对象</dd>
 
 <dt>7、请写出实现计算y=|x|的if语句。</dt>
+<dd>y = x>0?x:-x;</dd>
 
 <dt>8、写出设置Font对象fn的Java语句，要求Courier字体，BOLD风格，18磅字号，设调用对象的类型为Graphics的g。</dt>
+<dd><pre>Font fn = new Font("Courier", Font.BOLD, 18);
+g.setFont(fn);
+</pre></dd>
 
 <dt>9、通过流的构造方法建立文件流对象，请写出创建输入输出文件流对象的两种常用构造方法。</dt>
+<dd><pre>1、FileInputStream  fi = new FileInputStream("file.txt");
+2、FileOutputStream fo = new FileOutputStream("file.txt");
+</pre></dd>
 
 <dt>10、当Client程序和Server程序需要通信时，可以用Socket类建立套接字连接，请写出双方实现通信的两种方式。</dt>
+<dd>流式socket 和 数据报式socket</dd>
 
 <dt>11、请写出字符流数据与字节流数据的区别。</dt>
+<dd><pre>字符流用于处理 Unicode 字符集中的任何字符，每次读写的单位为 16 位字符；
+字节流用于读写二进制数据，每次读写的单位为 8 位。
+</pre></dd>
 
 <dt>12、请写出URLConnection类在编写Java网络应用程序中的作用。</dt>
+<dd>URLConnection 的作用是建立网络资源的连接，用于发送和接收信息。</dd>
 
 <dt>13、请写出一段if语句，判断一个整数n是否为偶数。如果是偶数，输出“Yes.”；否则,输出“No．”。</dt>
+<dd><pre>if(n%2==0) System.out.print("Yes.");
+else System.out.print("No.");</pre></dd>
 
 <dt>14、请写出接口定义的一般形式。</dt>
+<dd><pre>public interface 接口名 extends 父接口1, 父接口2...{  // 接口体 }
+</pre></dd>
 
 <dt>15、请写出Java语言编写事件处理程序的两种主要方案。</dt>
+<dd><pre>一种是程序重设方法handleEvent(event);
+另一个是程序实现一些系统设定的接口。
+</pre></dd>
 
 <dt>16、设已经有Graphics2D对象g2d, 请用Java语句绘制一个矩形rect，其左上角坐标是(20，30)，宽是120，高是30。</dt>
+<dd><pre>Rectangle2D rect = new Rectangle2D.Double(20,30,120,30);
+g2d.draw(rect);</pre></dd>
 
 <dt>17、打开文件对话框时，还可以设置筛选条件，即指定文件的类型。请写出FileFilter类预设的两个方法。</dt>
+<dd>accept()、 getDescription()</dd>
 
 <dt>18、请写出URLConnection类提供的三个常用方法。</dt>
+<dd>getInputStream()、getOutputStream()、connect()</dd>
 第五大题：编程题
 
 <dt>1、设计实现以下形式布局的Java小应用程序。<pre> 
@@ -567,9 +619,17 @@ public class Class1 extends Applet{
   MyWindow myWindow；
   public void init(){ myWindow=new MyWindow("一个小应用程序")；  }
 }</pre></dt>
+<dd><pre>super(s);
+container con = getContentPane();
+con.setLayout(new GridLayout(2, 4));
+JLabel label1 = new JLabel("学 号");  // label2、3、4 同格式罗列：姓 名、考试成绩、平时成绩
+text1 = new JTextField();    // text2、3、4 照抄
+con.add(label1);   // label2 同格式罗列
+this.setVisible(true);</pre></dd>
 
- <dt>2、编写数组复制方法。该方法从已知平衡的两维数组的左下角复制出一个非平衡的三角二维数组。设复制数组方法的模型为：<pre>
-public static double[][] leftDownConer(double[][]anArray)
+ <dt>2、编写数组复制方法。该方法从已知平衡的两维数组的左下角复制出一个非平衡的三角二维数组。设复制数组方法的模型为：
+public static double[][] leftDownConer(double[][]anArray)</dt>
+<dd><pre>
 public static double[][] leftDownConer(double[][]anArray){
     int l1= anArray.length;
     int l2=anArray[0].length;
@@ -590,9 +650,16 @@ public static double[][] leftDownConer(double[][]anArray){
         }
         return temp;
     }
-}</pre></dt>
+}</pre></dd>
 
 <dt>3、请编写方法void strReverse(String str)，该方法的功能是输出一个新字符串，新字符串字符排列顺序与原字符串str的字符排列顺序相反。例如，strReverse(″ABCD″) 所输出的结果是″DCBA″。请使用字符串与字节数组的相互转换方法进行设计。</dt>
+<dd><pre>public static void strReverse(String str){
+    String s = "";
+    for(int i = str.length(); i>=0; i--){
+        s += str.charAt(i);
+    }
+    return s;
+}</pre></dd>
 
 <dt>4、请设计实现如下用于输入学号和姓名的对话框界面，其中空白格是文本框，用于输入相应的内容。<pre> 
   <img src="https://public-1251896456.cos.ap-nanjing.myqcloud.com/upic/java1-5-3.png" />
@@ -614,6 +681,10 @@ class InputNoNameDialog extends JDialog implements ActionListener{
         setVisible(false)；dispose()；
     }
 }</pre></dt>
+<dd><pre>done=new JButton(“确定”); done.addActionListener(this);
+con.add(title) ; con.add(done);
+con.add(new JLabel(“学号”,JLabel.CENTER)); con.add(text1);
+con.add(new JLabel(“姓名”,JLabel.CENTER)); con.add(text2);</pre></dd>
 
 <dt>5、以下程序的界面有一个按钮button、一个文本区textA和一个文本框textF。程序运行时，在文本区中输入数字序列，单击按钮，则在文本框中显示数字序列的和。以下是要求你编写的actionPerformed(ActionEvent e)方法的部分代码。
 <pre>
@@ -622,6 +693,24 @@ public void actionPerformed(ActionEvent e) {
     String s = textA.getText();  double sum =0;
     StringTokenizer fenxi = new StringTokenizer(s, " ,\n");
     //请在以下位置编写代码</pre></dt>
+<dd><pre>int n=fenxi.countTokens();
+int i=0;
+while(fenxi.hasMoreTokens()){
+    String s1=fenxi.nextToken();
+    sum = sum + Double.valueOf(s1).doubleValue();
+}
+textF.setText(""+sum);</pre></dd>
 
 <dt>6、编写方法int searchMaxNumIndex(int[]a)，寻找已知数组中最大数的下标并返回。</dt>
+<dd><pre>int searchMaxNumIndex(int[] a){
+    int i,n,max;
+    max=a[0]; n=0;
+    for(i=1; i<a.length; i++)
+        if(a[i]>max){
+            max=a[i]; n=i;
+        }
+    return n;
+   }
+</pre></dd>
+<p>done.
 
