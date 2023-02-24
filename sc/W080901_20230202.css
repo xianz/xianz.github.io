@@ -18,7 +18,9 @@ dd pre ol{ margin:0;padding:0;line-height: 1em;}
 /****/
 dt{margin-top:.5em; background:var(--word_color);}
 dt img,dd img{ width: 11cm;}
-pre{ background:white; margin:3px;}
+pre{ background:white; margin:3px;
+	white-space: pre-wrap;
+  word-wrap: break-word;}
 
 /**** 以下是要删的样式 **** /
 /** 软件工程 **/
