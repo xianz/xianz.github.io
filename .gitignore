@@ -14,8 +14,9 @@ Thumbs.db
 *.iml
 /out/*
 target/
-.idea
 */target
+.idea
+tmp
 */*.iml
 *.iml
 
