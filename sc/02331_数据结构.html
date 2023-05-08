@@ -1,0 +1,624 @@
+<!doctype html><html lang="zh"><head><meta charSet="utf-8"/>
+    <title>02331数据结构</title>
+	<link href="W080901_20230202.css" rel="stylesheet"/>
+    <script src="../zepto.min.js"></script>
+    <script src="../app.js"></script>
+   </head><body>
+    <button id="toggle_but" style="background: red;"> [显示/关闭] </button>
+ #### 《数据结构》(课程代码02331)
+
+ ### 第一大题：单项选择题
+ <dl class="xuanzeti">
+ <dt>1、线性表的链式存储结构是一种(    ) 存储结构</dt>
+ 
+<dd>A.随机存取</dd>
+<dd>B.<span>顺序存取</dd>
+<dd>C.索引存取</dd>
+<dd>D.散列存取</dd>
+ 
+ <dt>2、算法分析的目的是(    )</dt>
+ 
+<dd>A.找出数据结构的合理性</dd>
+<dd>B.研究算法中的输入和输出的关系</dd>
+<dd>C.<span>分析算法的效率以求改进</dd>
+<dd>D.分析算法的易懂性和文档性</dd>
+ 
+ <dt>3、在循环双向链表的p所指结点之后插入s所指结点的操作是(    )</dt>
+ 
+<dd>A.p->right=s;s->left=p;p->right->left=s;s->right=p->right;</dd>
+<dd>B.p->right=s;p->right->left=s;s->left=p;s->right=p->right;</dd>
+<dd>C.s->left=p;s->right=p->right;p->right=s;p->right->left=s;</dd>
+<dd>D.<span>s->left=p;s->right=p->right;p->right->left=s;p->right=s;</dd>
+ 
+ <dt>4、从一个具有n个结点的单链表中查找其值等于x结点是，在查找成功的情况下，需要比较 (    )个结点</dt>
+ 
+<dd>A.n</dd>
+<dd>B.n/2</dd>
+<dd>C.C (n-1)/2</dd>
+<dd>D.<span>(n+1)/2</dd>
+ 
+ <dt>5、在一个链对中，假设f和r分别为队首和队尾指针，则删除一个结点的运算是(     )</dt>
+ 
+<dd>A.r=f->next</dd>
+<dd>B.r=r->next;</dd>
+<dd>C.<span>f=f->next;</dd>
+<dd>D.f=r->next;</dd>
+ 
+ <dt>6、设串s1=‘ABCDEFG’，s2=‘PQRST’，函数con（x，y）返回x和y串的连接串，subs（s，i，j）返回串s的从序号id字符开始的j个字符组成的子串，len(s)返回串s的长度。则con(subs(s1，2，len(s2))，subs(s1，len(s2)，2))的结果是(    )</dt>
+ 
+<dd>A.BCDEF</dd>
+<dd>B.BCDEFG</dd>
+<dd>C.BCPQRST</dd>
+<dd>D.<span>BCDEFEF</dd>
+ 
+ <dt>7、数组的两种基本操作是(    )</dt>
+ 
+<dd>A.建立与删除</dd>
+<dd>B.索引和修改</dd>
+<dd>C.<span>查找和修改</dd>
+<dd>D.查找与索引</dd>
+ 
+ <dt>8、二维数组M的元素是4个字符（每个字符占一个存储单元）组成的串，行下标i的范围是0到4,列下标j的范围是0到5,M按行存储时元素M[3][5]的起始地址与M按列存储时的元素(    )的起始地址相同</dt>
+ 
+<dd>A.M[2][4]</dd>
+<dd>B.<span>M[3][4]</dd>
+<dd>C.M[3][5]</dd>
+<dd>D.M[4][4]</dd>
+ 
+ <dt>9、采用顺序查找方法查找长度为n的线性表时，每个元素的平均查找长度为(     )</dt>
+ 
+<dd>A.n</dd>
+<dd>B.n/2</dd>
+<dd>C.<span>(n+1)/2</dd>
+<dd>D.8(n-1)/2</dd>
+ 
+ <dt>10、线性表若采用链式存储结构时，要求内存中可用存储单元的地址(    )  </dt>
+ 
+<dd>A.必须是连续的</dd>
+<dd>B.部分地址是连续的</dd>
+<dd>C.一定不是连续的</dd>
+<dd>D.<span>连续不连续都可以</dd>
+ 
+ <dt>11、不带头节点的单链表head为空的判定条件是(    )</dt>
+ 
+<dd>A.<span>head==NULL</dd>
+<dd>B.head->next==NULL</dd>
+<dd>C.head->next==head</dd>
+<dd>D.head!=NULL</dd>
+ 
+ <dt>12、带头节点的单链表head为空的判定条件是(    )</dt>
+ 
+<dd>A.head==NULL</dd>
+<dd>B.<span>head->next==NULL</dd>
+<dd>C.head->next==head</dd>
+<dd>D.head!=NULL</dd>
+ 
+ <dt>13、在一个单链表中，已知q所指结点是p所指结点的前驱结点，若在q和p之间插入s结点，则执行(    )</dt>
+ 
+<dd>A.s->next=p->next;p->next=s;</dd>
+<dd>B.p->next=s->next;s->next=p;</dd>
+<dd>C.<span>q->next=s;s->next=p;</dd>
+<dd>D.p->next=s;s->next=q;</dd>
+ 
+ <dt>14、串是一种特殊的线性表，其特殊性体现在(    )</dt>
+ 
+<dd>A.可以顺序存储</dd>
+<dd>B.<span>数据元素是一个字符</dd>
+<dd>C.可以连续存储</dd>
+<dd>D.数据元素可以使多个字符</dd>
+ 
+ <dt>15、数组A中，每个元素A的长度为3个字节，行下标i从1到8,列下标j从1到10，从首地址SA开始连续存在存储器中，该数组按列存放时，元素A[5][8]的起始地址为(   )   </dt>
+ 
+<dd>A.SA+141</dd>
+<dd>B.<span>SA+180</dd>
+<dd>C.SA+222</dd>
+<dd>D.SA+225</dd>
+ 
+ <dt>16、二维数组M的成员是6个字符（每个字符占一个存储单元）组成的串，行下标i的范围是从0到8,列下标j的范围是1到10，M的第8列和第5行共占(    )字节</dt>
+ 
+<dd>A.<span>108</dd>
+<dd>B.114</dd>
+<dd>C.54</dd>
+<dd>D.60</dd>
+ 
+ <dt>17、在线索二叉树中，t所指结点没左子树的充要条件是(   )  </dt>
+ 
+<dd>A.t->left==NULL</dd>
+<dd>B.<span>t->ltag==1</dd>
+<dd>C.t->ltag==1 and t->left==NULL</dd>
+<dd>D.以上都不对</dd>
+ 
+ <dt>18、已知某二叉树的后序遍历序列是dabec,中序遍历是debac，它的前序遍历序列是(    )</dt>
+ 
+<dd>A.acbed</dd>
+<dd>B.decab</dd>
+<dd>C.deabc</dd>
+<dd>D.<span>cedba</dd>
+ 
+ <dt>19、如果T2是由有序树T转换而来的二叉树，那么T中结点的前序就是T2中结点的(     )</dt>
+ 
+<dd>A.<span>前序</dd>
+<dd>B.后序</dd>
+<dd>C.中序</dd>
+<dd>D.层次序列</dd>
+ 
+ <dt>20、对于一个具有n个顶点和e条边的无向图，若采用邻接表表示，则表头向量的大小为(     )</dt>
+ 
+<dd>A.<span>n</dd>
+<dd>B.n+1</dd>
+<dd>C.n-1</dd>
+<dd>D.n2</dd>
+ 
+ <dt>21、有一个有序表为（1,3,9,12,32,41,45,62,75,77,82,95,100），当二分查找值为82的结点是，(     ) 次比较后查找成功</dt>
+ 
+<dd>A.1</dd>
+<dd>B.2</dd>
+<dd>C.<span>4</dd>
+<dd>D.8</dd>
+ 
+ <dt>22、设哈希表长m=14，哈希函数H（key）=key%11，表中已有4个结点：addr(15)=4,addr(38)=5,addr(61)=6,addr(84)=7，其余地址为空，若用二次探测再散列处理冲突，关键字为49的结点的地址是 (     )</dt>
+ 
+<dd>A.8</dd>
+<dd>B.3</dd>
+<dd>C.5</dd>
+<dd>D.<span>9</dd>
+ 
+ <dt>23、在以下的叙述中，正确的是(    )</dt>
+ 
+<dd>A.线性表的线性存储结构优于链表存储结构</dd>
+<dd>B.<span>二维数组是数据元素为线性表的线性表</dd>
+<dd>C.栈的操作方式是先进先出</dd>
+<dd>D.队列的操作方式是先进后出</dd>
+ 
+ <dt>24、线性结构的顺序存储结构是一种(    )存储结构</dt>
+ 
+<dd>A.<span>随机存取</dd>
+<dd>B.顺序存取</dd>
+<dd>C.索引存取</dd>
+<dd>D.散列存取</dd>
+ 
+ <dt>25、非空的循环单链表head的尾结点（有p所指向）满足(    )</dt>
+ 
+<dd>A.p->next==NULL</dd>
+<dd>B.p==NULL</dd>
+<dd>C.<span>p->next=head</dd>
+<dd>D.p==head</dd>
+ 
+ <dt>26、在一个单链表中，若p所指结点不是最后结点，在p之后插入s所指结点，则执行(     )</dt>
+ 
+<dd>A.s->next=p;p->next=s;</dd>
+<dd>B.<span>s->next=p->next;p->next=s;</dd>
+<dd>C.s->next=p->next;p=s;</dd>
+<dd>D.p->next=s;s->next=p;</dd>
+ 
+ <dt>27、在一个单链表中，若删除p所指结点的后续结点，则执行(    )</dt>
+ 
+<dd>A.<span>p->next=p->next->next;</dd>
+<dd>B.p=p->next;p->next=p->next=next;</dd>
+<dd>C.p->next=p->next;</dd>
+<dd>D.p=p->next->next;</dd>
+ 
+ <dt>28、设有连个串p和q，求q在p中首次出现的位置的运算称作(    )</dt>
+ 
+<dd>A.连接</dd>
+<dd>B.<span>模式匹配</dd>
+<dd>C.求子串</dd>
+<dd>D.求串长</dd>
+ 
+ <dt>29、数组A中，每个元素A的长度为3个字节，行下标i从1到8,列下标j从1到10，从首地址SA开始连续存在存储器中，该数组按行存放时，元素A[8][5]的起始地址为(   )   </dt>
+ 
+<dd>A.SA+141</dd>
+<dd>B.SA+144</dd>
+<dd>C.<span>SA+222</dd>
+<dd>D.SA+225</dd>
+ 
+ <dt>30、稀疏矩阵一般的压缩存储方法有两种，分别是(      )</dt>
+ 
+<dd>A.二维数组和三维数组</dd>
+<dd>B.三元数组和散列</dd>
+<dd>C.<span>三元数组和十字链表</dd>
+<dd>D.散列和十字链表</dd>
+ 
+ <dt>31、维数组M的成员是6个字符（每个字符占一个存储单元）组成的串，行下标i的范围是从0到8,列下标j的范围是1到10，若按行优先方式存储，元素M[8][5]的起始地址与当M按列优先方式存储的 (      )元素的起始地址一致</dt>
+ 
+<dd>A.M[8][5]</dd>
+<dd>B.<span>M[3][10]</dd>
+<dd>C.M[5][8]</dd>
+<dd>D.M[0][9]</dd>
+ 
+ <dt>32、如果T2是由有序树T转换而来的二叉树，那么T中结点的后序就是T2中结点的(      )  </dt>
+ 
+<dd>A.前序</dd>
+<dd>B.<span>后序</dd>
+<dd>C.中序</dd>
+<dd>D.层次序列</dd>
+ 
+ <dt>33、二叉树的前序遍历结点顺序是abdgcefh，中序遍历的结点顺序是dgbaechf，则其后序遍历结点顺序是(      ) </dt>
+ 
+<dd>A.bdgcefha</dd>
+<dd>B.gdbecfha</dd>
+<dd>C.bdgaechf</dd>
+<dd>D.<span>gdbehfca</dd>
+ 
+ <dt>34、按照二叉树的定义，具有3个结点的二叉树有(        )种</dt>
+ 
+<dd>A.3</dd>
+<dd>B.4</dd>
+<dd>C.<span>5</dd>
+<dd>D.6</dd>
+ 
+ <dt>35、在一个有向图中，所有顶点的入度之和等于所有顶点的出度之和的(      )倍</dt>
+ 
+<dd>A.1/2</dd>
+<dd>B.<span>1</dd>
+<dd>C.2</dd>
+<dd>D.4</dd>
+</dl> 
+ ### 第二大题：填空题
+ 
+ <dt>1、在各种查找方法中，平均查找长度与结点个数n无关的查找方法是(    )</dt>
+ 
+ <dt>2、已知一个图的邻接矩阵表示，删除所有从i个结点出发的边的方法是(    )</dt>
+ 
+ <dt>3、对n个元素的序列进行冒泡排序，最少的比较次数(    )</dt>
+ 
+ <dt>4、在插入和选择排序中，若初始数据基本正序，则选择(    )</dt>
+ 
+ <dt>5、已知二维数组A[10...20][5...10]采用行序为主方式存储，每个元素占4个存储单元，并且A[10][5]的存储地址是1000，这A[18][9]的地址是(    )</dt>
+ 
+ <dt>6、空格串的长度等于(    ) </dt>
+ 
+ <dt>7、可以使用(    )表示树形结构</dt>
+ 
+ <dt>8、串的两种基本存储方式是 链接存储 和(    )</dt>
+ 
+ <dt>9、广义表(((a)))的表头是(    )</dt>
+ 
+ <dt>10、下面程序的时间复杂度(    ) 
+<pre>
+i = s = 0;
+while (s &lt; n) {
+    i++;
+    s += i;
+}
+</pre></dt>
+ 
+ <dt>11、在栈顶指针为HS链栈中，判定栈空的条件是(    ) </dt>
+ 
+ <dt>12、单链表是(    )  链接存储表示</dt>
+ 
+ <dt>13、广义表((a),((b),c),(((d))))的表头是(    ) </dt>
+ 
+ <dt>14、已知二维数组A[10][20]采用列序为主方式存储，每个元素占一个存储单元，并且第一个元素的存储地址是200，这A[6][12]的地址是(    ) </dt>
+ 
+ <dt>15、二分查找的存储结构仅限于(    )</dt>
+ 
+ <dt>16、已知一个图的邻接矩阵表示，计算第i个结点的入度方法是(    )</dt>
+ 
+ <dt>17、在插入排序、希尔排序、选择排序、快速排序、堆排序中，稳定的排序有(    )</dt>
+ 
+ <dt>18、在堆排序中，快速和归并排序中，若只从平均情况下排序最快考虑，应选取(    )方法</dt>
+ 
+ <dt>19、下面程序的时间复杂度(    )
+ <pre>
+ s = 0;
+ for (i = 0; i &lt; n; i++)
+    for (j = 0; j &lt; n; j++) s += B[i][j];
+ sum = s;</pre></dt>
+ 
+ <dt>20、非空的循环单链表head的尾结点（由p所指向），满足条件(    )</dt>
+ 
+ <dt>21、在双链表中，每个结点有两指针域，一个指向(    )结点，一个指向后续结点</dt>
+ 
+ <dt>22、两个串相等的充分必要条件是(    )</dt>
+ 
+ <dt>23、广义表(a,(a,b),d,e,((i,j),k))的长度为(    )</dt>
+ 
+ <dt>24、已知二维数组A[m][n]采用行序为主方式存储，每个元素占k个存储单元，并且第一个元素的存储地址是LOC(A[0][0])，这A[i][j]的地址是(    )</dt>
+
+ 第三大题：应用题
+<dt>1、设向量有A，B，C，其中A有元素n个且任何元素都不为0。阅读后补全程序，并回答问题。
+<pre>
+void f(vector A, int n, vector B, int * p, vector C, int * q) {
+	int i; * p = 0; * q = 0;
+	for (i = 0; i &lt;= n - 1; i++) {
+		if (A[i] > 0) {
+			_____（1）_____;
+			B[ * p] = A[i];
+		}
+		if (A[i] &lt; 0) {
+			_____（2）_____;
+			C[ * q] = A[i];
+		}
+	}
+}</pre></dt>
+<dd>（1）__________</dd>               
+<dd>（2）__________</dd>
+<dd>（3）该程序的功能是什么？</dd> 
+
+<dt>3、阅读下面代码，分析程序实现的功能
+<pre>
+typedef struct bnode {
+	ElemType data；struct bnode * left， * right；
+}
+btree；
+
+btree * f(btree * root, btree * p, btree * q) {
+	btree * s[Maxsize],
+	*anor[Maxsize],
+	*b,
+	*r;
+	int tag[Maxsize],
+	find = 0;
+	int top = 0;
+	b = root;
+	int i,
+	k,
+	j;
+	do {
+		while (_______（1）_______) {
+			top++;
+			s[top] = b;
+			tag[top] = 0;
+			b = b - >left;
+		}
+
+		if (top > 0) {
+			if (tag[top] == 1) {
+				if (s[top] == p) for (i = 1; i &lt;= top; i++) anor[i] = s[i];
+				if (s[top] == q) {
+					j = top;
+					while (!find) {
+						k = i - 1;
+						while (k > 0 && s[j] != anor[k]) k--;
+						if (k > 0) {
+							find = 1;
+							r = anor[k];
+						} else j--;
+					}
+
+				}
+				top--;
+			} else {
+				b = s[top];
+				if (top > 0 && !find) {
+					b = b - >right;
+					tag[top] = 1;
+				}
+			}
+
+		}
+	} while (! find && ( b != NULL || top != 0 ));
+	_______（2）_______ r;
+}
+</pre></dt>
+<dd>(1)  ____________________</dd>
+<dd>(2)  ____________________</dd>
+<dd>(3) 该程序的功能是什么？</dd>
+
+
+<dt>4、阅读下面代码，分析程序实现的功能
+<pre>
+typedef struct linknode {
+	ElemType data；struct linknode * next；
+}
+node；
+
+void f(node * h1, node * h2) {
+	node * p,
+	*q,
+	*s;
+	h2 = (node * ) malloc(sizeof(node));
+	q = h2;
+	p = h1;
+	while (__________（1）__________) {
+		s = (node * ) malloc(sizeof(node));
+		s - >data = p - >data;
+		q - >next = s;
+		q = s;
+		p = p - >next;
+	}
+	q - >next = NULL;
+	__________（2）__________;
+	h2 = h2 - >next;
+	free(p);
+}
+</pre>
+</dt>
+<dd>（1） ____________________</dd>
+<dd>（2） ____________________</dd>
+<dd>（3） 该程序的功能是什么？</dd>
+
+<dt>5、阅读完成下列程序，并回答问题
+<pre>
+typedef struct bnode {
+	ElemType data；struct bnode * left， * right；
+}
+btree；void f(btree * b) {
+	btree * stack[MAXSIZE],
+	*p;
+	int top = 0;
+	p = b;
+	do {
+		while (__________（1）__________) {
+			top++;
+			stack[top] = p;
+			p = p - >left;
+		}
+		if (top > 0) {
+			__________（2）_________;
+			top--;
+			printf("%d ", p - >data);
+			p = p - >right;
+		}
+
+	} while ( p != NULL || top != 0 )
+}
+</pre>
+</dt>
+<dd>（1） ____________________</dd>
+<dd>（2） ____________________</dd>
+<dd>（3） 该程序的功能是什么？</dd>
+
+<dt>6、阅读下列程序，回答问题
+<pre>
+#define MAXITEM 100 
+struct element {
+	keytype key;
+	elementtype data;
+};
+typedef struct sqlist[MAXITEM]
+
+int f(sqlist r, int k, int n) {
+	int i = 0;
+	while (i &lt; n && r[i].key != k) i++;
+	if (i > n) i = -1;
+	return (i);
+}
+</pre>
+</dt>
+<dd>该程序的功能是什么？</dd>
+
+<dt>7、阅读下列程序，回答问题
+<pre>
+#define MAXITEM 100
+struct element {
+	keytype key;
+	elementtype data;
+};
+typedef struct sqlist[MAXITEM]
+
+int f(sqlist r, int k, int n) {
+	int i, low = 0, high = n - 1, mid, find = 0;
+	while (low &lt;= high && !find) {
+		mid = (low + high) / 2;
+		if (k &lt; r[mid].key) high = mid - 1;
+		else if (k > r[mid].key) low = mid + 1;
+		else {
+			i = mid;
+			find = 1;
+		}
+		if (!find) i = -1;
+		return (i);
+	}
+}
+</pre>
+</dt>
+<dd>该程序的功能是什么？</dd>
+
+<dt>8、阅读完成下列程序，并回答问题
+<pre>
+#define MAXITEM 100
+struct element {
+	keytype key;
+	elementtype data;
+};
+typedef struct sqlist[MAXITEM]
+
+void f(sqlist r, int n) {
+	int i, j;
+	struct element w;
+	for (i = 1; i &lt;= n - 1; i++)
+		for (j = n; j >= i + 1; j--)
+			if (r[j].key &lt; r[j - 1].key) {
+				w = r[j];
+				__________（ 1） __________ = r[j - 1];
+				r[j - 1] = __________（ 2） __________;
+			}
+}
+</pre>
+</dt>
+<dd>（1） ____________________</dd>
+<dd>（2） ____________________</dd>
+<dd>（3） 该程序的功能是什么？</dd>
+
+<dt>9、设向量有A，B，C，其中A有个m个元素，B有n个元素。阅读完成下列程序，并回答问题。
+<pre>
+int link(vector a, int m, vector b, int n, vector c) {
+	int i = 0, j = 0, l, k = 0;
+	while (i &lt; m && j &lt; n) {
+		if (a[i] &lt; b[j])
+			c[k++] = a[i++];
+		else if (a[i] > b[j])
+			__________（ 1） __________;
+		else {
+			c[k++] = b[j++];
+			i++;
+		}
+	}
+	if (i == m)
+		for (l = j; l &lt; n; l++)
+			_______________（ 2） _______________;
+	if (j == n)
+		for (l = i; l &lt; m; l++)
+			c[k++] = b[l];
+	return k;
+}
+</pre></dt>
+<dd>（1） ____________________</dd>
+<dd>（2） ____________________</dd>
+<dd>（3） 该程序的功能是什么？</dd>
+
+第四大题：程序设计题
+<dt>
+1、假设二叉树采用链表存储结构，设计一个算法计算二叉树中指定结点的层数的程序（使用递归算法）
+函数原型：<pre>void  level（btree *b， btree *p，int  *h， int h1）
+/*
+h返回p所指定结点的高度，初始值为-1，树为空返回0；
+h1指示b树高度，初始值为1 */
+type struct bnode
+{
+    ElemType data；
+    struct bnode *left，*right；
+}btree；</pre></dt>
+
+<dt>2、设计一个程序实现深度优先搜索（使用递归算法）
+	函数原型：<pre>
+int dfs（ adjlist adj, int v）# include &lt; stdio.h > #define MAXVEX 30
+struct edgenode {
+	int adjvex;
+	char info;
+	struct edgenode * next;
+};
+struct vexnode {
+	char data;
+	struct edgenode * link;
+};
+typedef struct vexnode adjlist[MAXVEX];
+int visited[MAXVEX];
+</pre></dt>
+
+第五大题：综合题
+<dt>1、已知序列{17,18,60,40,7,32,73,65,85}，请给出采用冒泡排序法对该序列排序时每一趟的结果<pre>
+   （1）
+   （2）
+   （3）
+   （4）
+   （5）</pre></dt>
+<dt>2、对关键字序列(15,22,10 13 30, 16,12,17)按从小到大进行快速排序<pre>
+   (1)写出排序过程中前两趟的划分结果；
+   (2)快速排序是否是稳定的排序方法?</pre></dt>
+
+<dt>3、已知序列{503,87,512,61,908,170,897,275,653,462}，请给出采用快速排序法对该序列做升序排序时的每一趟的结果<pre>
+   1）[462,87,275,61,170],503,[897,908,653,512]
+   2）[170,87,275,61],462,503,[897,908,653,512]
+   3）
+   4)
+   5)
+   6)
+   7)
+   8) 61,87,170,275,462,503,512,[653,]897[908]
+   9) 61,87,170,275,462,503,512,653,897[,908]
+   10) 61,87,170,275,462,503,512,653,897,908</pre>
+</dt>
+
+<dt>4、对于直接插入排序，希尔排序，冒泡排序，快速排序，直接选择排序，堆排序和归并排序等排序方法，分别写出：
+<pre>
+  （1）平均时间复杂度低于O（n2）的排序方法；
+  （2）所需辅助空间最多的排序方法；
+  （3）最好情况和最坏情况下的时间复杂度相同的排序方法。
+  （1）
+  （2）
+  （3）</pre>
+</dt>
+

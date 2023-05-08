@@ -3,6 +3,8 @@ $(function(){
         $(".xuanzeti dd span").toggleClass('text_green');
         $(".tiankongti dt span").toggleClass('text_brown');
         $(".jiandati dt span").toggleClass('text_green');
+        $(".panduan dd span").toggleClass('text_green');
+
         $(".mingcijieshi dd").toggleClass('textarea_color');
         $(".jiandati dd").toggleClass('textarea_color');
 
