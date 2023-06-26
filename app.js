@@ -5,8 +5,11 @@ $(function(){
         $(".jiandati dt span").toggleClass('text_green');
         $(".panduan dd span").toggleClass('text_green');
 
+        $(".zongheti span,.zongheti dd").toggleClass('textarea_color');
+
         $(".mingcijieshi dd").toggleClass('textarea_color');
         $(".jiandati dd").toggleClass('textarea_color');
+
 
         color = $('#toggle_but').css('background')=='red'?'green':'red';
         $('#toggle_but').css('background', color);
