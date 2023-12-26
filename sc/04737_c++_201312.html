@@ -1,10 +1,14 @@
 <!doctype html><html lang="zh"><head><meta charSet="utf-8"/>
     <title>04737 c++（2013.12）</title>
 	<link href="W080901_20230202.css" rel="stylesheet"/>
+    <script src="../zepto.min.js"></script>
+    <script src="../app.js"></script>
    </head><body>
+    <button id="toggle_but"> [显示/关闭] </button>
     <dl>
     《C++ 程序设计》(课程代码04737)
-    <dt>1、%s是输出字符串的格式控制符。【 】</dt>
+<dl class="xuanzeti"> 
+<dt>1、%s是输出字符串的格式控制符。【 】</dt>
 <dd><span> A.正确</span>    B.错误</dd>
 
 <dt>2、关键字defined是一个预处理操作符。用于判定一个标识符是否已经被#define定义。【 】</dt>
@@ -280,8 +284,8 @@ int main(){
 }</pre></dd>
 
 <dt>29、输入若干个整数，分别以16进制，8进制输出，然后以10个字符宽度输出，宽度不足左边补0。</dt>
-<dd><pre>#include <iostream> 
-#include<iomanip>
+<dd><pre>#include &lt;iostream> 
+#include &lt;iomanip>
 using namespace std;
 int main() {
     int x[5] = { 0 };
@@ -301,34 +305,34 @@ int main() {
 }</pre></dd>
 
 <dt>30、编写一个程序，将从键盘输入的n个字符串保存在一个一维数组A中。在输入字符串之前，先输入n的值。要求，数组A需要动态申请空间，程序运行结束前再释放掉。</dt>
-<dd><pre>#include <iostream>
-    using namespace std;
-    int main() {
-        cout &lt;&lt; "请输入字符串个数:";
-        int n; //输入n
-        cin >> n;
-        char ** A; //定义一个指针数组
-        A = new char * [n]; //动态申请空间
-        for (int i = 0; i &lt; n; i++) {
-            A[i] = new char[20]; //每个指针指向一个字符串
-            cout &lt;&lt; "请输入第" &lt;&lt; i + 1 &lt;&lt; "个字符串:";
-            cin >> A[i]; //输入字符串
-        }
-        cout &lt;&lt; "输入的字符串为:" &lt;&lt; endl;
-        for (int i = 0; i &lt; n; i++) {
-            cout &lt;&lt; A[i] &lt;&lt; endl; //输出字符串
-        }
-        for (int i = 0; i &lt; n; i++) {
-            delete[] A[i]; //释放空间
-        }
-        delete[] A;
-        return 0;
-    }</pre></dd>
+<dd><pre>#include &lt;iostream>
+using namespace std;
+int main() {
+    cout &lt;&lt; "请输入字符串个数:";
+    int n; //输入n
+    cin >> n;
+    char ** A; //定义一个指针数组
+    A = new char * [n]; //动态申请空间
+    for (int i = 0; i &lt; n; i++) {
+        A[i] = new char[20]; //每个指针指向一个字符串
+        cout &lt;&lt; "请输入第" &lt;&lt; i + 1 &lt;&lt; "个字符串:";
+        cin >> A[i]; //输入字符串
+    }
+    cout &lt;&lt; "输入的字符串为:" &lt;&lt; endl;
+    for (int i = 0; i &lt; n; i++) {
+        cout &lt;&lt; A[i] &lt;&lt; endl; //输出字符串
+    }
+    for (int i = 0; i &lt; n; i++) {
+        delete[] A[i]; //释放空间
+    }
+    delete[] A;
+    return 0;
+}</pre></dd>
 
 <dt>31、实现斐波拉契数列。
     //波那契数列其实就是这样一组数列：1、1、2、3、5、8、13、21、34、……
     </dt>
-<dd><pre>#include<iostream>
+<dd><pre>#include &lt;iostream>
 using namespace std;
 int main()
 {
@@ -350,7 +354,7 @@ int main()
 }</pre></dd>
 
 <dt>32、下面程序的功能是将一个 4×4 的数组进行逆时针旋转 90 度后输出，要求原始数组的数据随机输入，新数组以 4 行 4 列的方式输出。</dt>
-<dd><pre>#include<iostream>
+<dd><pre>#include&lt;iostream>
 using namespace std;
 int main()
 {
@@ -376,7 +380,7 @@ int main()
 <dt>33、已知数组a中的元素已按由小到大顺序排列，以下程序的功能是将输入的一个数插入数组a中，插入后，数组a中的元素仍然由小到大顺序排列。
     </dt>
     <dd>
-        <pre>#include<iostream>
+        <pre>#include&lt;iostream>
 using namespace std;
 int main()
 {
@@ -405,7 +409,7 @@ int main()
 
 
 <dt>34、编程打印直角杨辉三角形。</dt>
-<dd><pre>#include<iostream>
+<dd><pre>#include&lt;iostream>
 using namespace std;
 int main()
 {
@@ -431,7 +435,7 @@ int main()
 
 <dt>35、通过键盘输入 3 名学生 4 门课程的成绩，分别求每个学生的平均成绩和每门课程的平均成绩。要求所有成绩均放入一个 4 行 5 列的数组中，输入时同一人数据间用空格, 不同人用回车其中最后一列和最后一行分别放每个学生的平均成绩、每门课程的平均成绩及全班平均分。
     </dt>
-    <dd><pre>#include<iostream>
+    <dd><pre>#include&lt;iostream>
 using namespace std;
 int main()
 {
@@ -473,8 +477,8 @@ int main()
 
 <dt>36、输入一个字符串，判断其是否为回文。回文字符串是指从左到右读和从右到左读完全相同的字符串。
 </dt>
-    <dd><pre>#include<iostream>
-#include<string>
+    <dd><pre>#include&lt;iostream>
+#include&lt;string>
 using namespace std;
 int main()
 {
@@ -496,7 +500,7 @@ int main()
 
 <dt>37、打印九九乘法表。
     </dt>
-    <dd><pre>#include<iostream>
+    <dd><pre>#include&lt;iostream>
 using namespace std;
 int main()
 {
@@ -513,7 +517,7 @@ int main()
 
 <dt> 38、冒泡排序，从小到大，排序后结果输出到屏幕。
     </dt>
-    <dd><pre>#include<iostream>
+    <dd><pre>#include&lt;iostream>
 using namespace std;
 int main()
 {
