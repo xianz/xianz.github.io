@@ -1,0 +1,31 @@
+$('.ui-question')[60].innerHTML.replaceAll(' ', '')
+
+
+
+$('.ui-question-serial-no').remove()
+$('.ui-question-answer-right').remove()
+$('.ui-question-answer-error').remove()
+$('.ui-question-score').remove()
+$('.ui-question-action-bar').remove()
+
+$('[style=""]').removeAttr('style')
+$('[code]').removeAttr('code')
+$('[id]').removeAttr('id')
+
+
+
+var diffele = [];
+$('.ui-paper-wrapper .ui-question').each(function(i, e1){
+    var flag=true, e1v, e2v, es = $('.ui-overflow .ui-question'); loga=0,logb=0;
+    for(k=0;k<es.length;k++){
+        e1v = $(e1).html().replaceAll(' ','').replaceAll('\n', '');
+        e2v = es[k].innerHTML.replaceAll(' ','').replaceAll('\n', '');
+        if(e1v == e2v){ flag=false; loga++;
+            console.log("@@@@@", 'ev1:', e1v.length + '  e2v:'+e2v.length);//console.log(e1v);console.log(e2v);
+            break;
+        }else logb++;
+    };
+    if(flag) diffele.push(e1v);
+})
+
+$('.ui-question')[1].isEqualNode($.parseHTML(`
