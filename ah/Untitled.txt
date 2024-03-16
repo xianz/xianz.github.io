@@ -1,7 +1,8 @@
 $('.ui-question')[60].innerHTML.replaceAll(' ', '')
 
 
-
+// 步骤一：粘贴已汇总好的html（无则忽略）
+// 步骤二：使用一下代码 在【查看考卷】里 一并修饰一下
 $('.ui-question-serial-no').remove()
 $('.ui-question-answer-right').remove()
 $('.ui-question-answer-error').remove()
@@ -12,20 +13,37 @@ $('[style=""]').removeAttr('style')
 $('[code]').removeAttr('code')
 $('[id]').removeAttr('id')
 
-
-
+// 步骤三：两部分修饰好的代码可以进行去重了
 var diffele = [];
-$('.ui-paper-wrapper .ui-question').each(function(i, e1){
-    var flag=true, e1v, e2v, es = $('.ui-overflow .ui-question'); loga=0,logb=0;
-    for(k=0;k<es.length;k++){
-        e1v = $(e1).html().replaceAll(' ','').replaceAll('\n', '');
-        e2v = es[k].innerHTML.replaceAll(' ','').replaceAll('\n', '');
-        if(e1v == e2v){ flag=false; loga++;
-            console.log("@@@@@", 'ev1:', e1v.length + '  e2v:'+e2v.length);//console.log(e1v);console.log(e2v);
+var enew = $('.ui-paper-wrapper .ui-question'),
+    eold = $('.ui-overflow .ui-question'),
+    loga=0,logb=0;
+console.log('enew:'+enew.length, ' ; eold:'+eold.length)
+
+for(i = 0; i<enew.length; i++){
+    var flag=true, v2='',
+        v1 = enew[i].outerHTML.replaceAll(' ','').replaceAll('\n', '').replaceAll('class="ui-option-selected','class="').replaceAll('class=""','');
+    
+    for( j = 0; j < eold.length; j++){
+        v2 = eold[j].outerHTML.replaceAll(' ','').replaceAll('\n', '').replaceAll('class="ui-option-selected','class="').replaceAll('class=""','');
+        
+        if(v1 == v2){
+            flag = false;
             break;
-        }else logb++;
-    };
-    if(flag) diffele.push(e1v);
-})
+        }
+    }
+    if(flag){
+        diffele.push(enew[i].outerHTML);
+        console.log("@@@@@", 'v1:');console.log( v1 );
+        loga++;
+    }else logb++;
+}
+$('.ui-overflow .ui-question-group').append(diffele.join())
+console.log('done:', 'push:'+loga + ' already:'+logb)
+
+// 步骤四：在[元素]中 找到 .ui-overflow 下的 .ui-question-group 复制outerHTML
+
+
+
 
 $('.ui-question')[1].isEqualNode($.parseHTML(`
