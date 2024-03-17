@@ -2,6 +2,9 @@ $('.ui-question')[60].innerHTML.replaceAll(' ', '')
 
 
 // 步骤一：粘贴已汇总好的html（无则忽略）
+$('.ui-overflow').append(`...`)
+$('.ui-overflow .ui-question').length
+
 // 步骤二：使用一下代码 在【查看考卷】里 一并修饰一下
 $('.ui-question-serial-no').remove()
 $('.ui-question-answer-right').remove()
@@ -38,7 +41,7 @@ for(i = 0; i<enew.length; i++){
         loga++;
     }else logb++;
 }
-$('.ui-overflow .ui-question-group').append(diffele.join())
+$('.ui-overflow .ui-question-group').append(diffele.join(' '))
 console.log('done:', 'push:'+loga + ' already:'+logb)
 
 // 步骤四：在[元素]中 找到 .ui-overflow 下的 .ui-question-group 复制outerHTML
