@@ -21,7 +21,7 @@ var diffele = [];
 var enew = $('.ui-paper-wrapper .ui-question'),
     eold = $('.ui-overflow .ui-question'),
     loga=0,logb=0;
-console.log('enew:'+enew.length, ' ; eold:'+eold.length)
+console.log('enew:'+enew.length, '， eold:'+eold.length)
 
 for(i = 0; i<enew.length; i++){
     var flag=true, v2='',
@@ -42,7 +42,7 @@ for(i = 0; i<enew.length; i++){
     }else logb++;
 }
 $('.ui-overflow .ui-question-group').append(diffele.join(' '))
-console.log('done:', 'push:'+loga + ' already:'+logb)
+console.log( 'push:'+loga + '， already:'+logb)
 
 // 步骤四：在[元素]中 找到 .ui-overflow 下的 .ui-question-group 复制outerHTML
 
