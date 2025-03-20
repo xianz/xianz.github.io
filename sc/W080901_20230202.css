@@ -14,14 +14,15 @@ dd pre ol{ margin:0;padding:0;line-height: 1em;}
 .text_red{ color:red;}
 .text_brown{ color: brown !important;}
 .text_green{ color: green !important;
-  border: 1px solid green;
+  border: 1px solid green; 
+  /* font-size: 2.5em; */
  }
 .textarea_color{ color:green !important; }
 
-dd span {border: 1px solid transparent; display: inline-flex;}
+dd span {border: 1px solid transparent;display: inline-flex; }
 /****/
 dt{margin-top:.5em; background:var(--word_color);}
-dt img,dd img{ max-width: 44em;}
+dt img,dd img{ max-width: 33em;}
 pre{ background:white; margin:3px;
 	white-space: pre-wrap;
   word-wrap: break-word;}
