@@ -13,7 +13,10 @@ dd pre ol{ margin:0;padding:0;line-height: 1em;}
 /****/
 .text_red{ color:red;}
 .text_brown{ color: brown !important;}
-.text_green{ color: green !important; }
+.text_green{ color: green !important;
+  border: 1px solid green;
+  display: inline-flex;
+ }
 .textarea_color{ color:green !important; }
 /****/
 dt{margin-top:.5em; background:var(--word_color);}
