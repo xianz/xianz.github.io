@@ -20,7 +20,7 @@ dd pre ol{ margin:0;padding:0;line-height: 1em;}
 .textarea_color{ color:green !important; }
 /****/
 dt{margin-top:.5em; background:var(--word_color);}
-dt img,dd img{ max-width: 11cm;}
+dt img,dd img{ max-width: 21cm;}
 pre{ background:white; margin:3px;
 	white-space: pre-wrap;
   word-wrap: break-word;}
